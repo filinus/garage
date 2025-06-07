@@ -1,42 +1,50 @@
+<!-- index.html | version 1.1 (Tailwind CSS) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garage - Full of Everything but Cars</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        header {
-            text-align: center;
-            padding: 2rem 0;
-            border-bottom: 2px solid #333;
-            margin-bottom: 2rem;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Faina Kurochkina - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>Garage</h1>
-        <p>Full of Everything but Cars</p>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome to Our Space</h2>
-            <p>This is a unique garage where you'll find everything except cars. Stay tuned for more content!</p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 Garage Project</p>
-    </footer>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+<!-- Header -->
+<header class="bg-gray-900 text-white py-10 px-4 text-center">
+    <img src="avatar.webp" alt="Faina Kurochkina" class="w-28 h-28 rounded-full mx-auto mb-4 object-cover shadow-md"/>
+    <h1 class="text-3xl font-bold">Faina Kurochkina</h1>
+    <p class="mt-2 text-sm text-gray-300">Product Designer</p>
+    <p class="mt-4 max-w-2xl mx-auto text-sm text-gray-400">
+        I'm a Product Designer with 4 years of experience turning complex ideas into intuitive, human-centered solutions from concept to launch...
+    </p>
+    <div class="mt-4 flex justify-center space-x-4">
+        <a href="#" class="text-blue-400 hover:underline">LinkedIn</a>
+        <a href="#" class="text-blue-400 hover:underline">Behance</a>
+    </div>
+</header>
+
+<!-- Portfolio Projects -->
+<main class="py-10 px-4 max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="bg-white rounded-lg shadow p-4">
+        <img src="mojo_app.webp" alt="Project" class="rounded mb-4">
+        <h2 class="text-lg font-semibold">Mojo Mobile App</h2>
+        <p class="text-sm text-gray-600 mt-2">A vibrant platform for meaningful connections. UX/UI Design.</p>
+    </div>
+
+    <div class="bg-white rounded-lg border-dashed border-2 border-gray-300 p-4 flex flex-col justify-center items-center text-gray-400">
+        <p class="text-center">Add a new case study</p>
+        <button class="mt-2 text-sm bg-gray-200 px-4 py-1 rounded" disabled>+ Add case study</button>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="text-center text-sm text-gray-500 py-6">
+    <nav class="space-x-4">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">Resume</a>
+        <a href="#" class="hover:underline">Contact</a>
+    </nav>
+</footer>
+
 </body>
 </html>
